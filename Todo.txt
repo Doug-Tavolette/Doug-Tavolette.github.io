@@ -1,0 +1,5 @@
+1. get homepage working for react & spring boot
+2. wireframe website design and write blurbs
+3. actually make website
+4. add projects
+5. finish activity tracker project

@@ -1,16 +1,55 @@
 @import "tailwindcss";
+@layer background, foreground;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-.fixed-bg {
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: local;
+@layer background {
+  .fixed-bg {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+@layer foreground{
+    .foreground-bubble {
+    margin: 20px;
+    height:fit-content;
+    border-radius: 5px;
+    border: 2px solid #111111;   
+    
+    background-color:aquamarine;
+    display: flex;
+    display: inline-flex;
+
+    
+  }
+
+  .elevator-speech{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50vw;
+    text-align: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    display: flex;
+    background-color: rebeccapurple;
+  }
+
+  .blurbs{
+      width: 100px;
+  }
+}
+
+
+
 
 @theme inline {
   --color-background: var(--background);

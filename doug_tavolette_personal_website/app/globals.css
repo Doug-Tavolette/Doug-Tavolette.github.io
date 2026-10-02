@@ -1,52 +1,73 @@
 @import "tailwindcss";
 @layer background, foreground;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
+} */
+
+.home{
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-@layer background {
-  .fixed-bg {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* @layer background { */
+.fixed-bg {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  /* display: */
+  position: absolute;
+  /* flex-wrap: wrap; */
+  min-height: 100vh;
+  min-width: 100vw;
+}
+/* } */
+
+/* @layer foreground{ */
+  .foreground-bubble {
+  margin: 20px;
+  height:fit-content;
+  border-radius: 5px;
+  border: 2px solid #111111;   
+  
+  background-color:aquamarine;
+  /* display: flex;
+  display: inline-flex; */    
 }
 
-@layer foreground{
-    .foreground-bubble {
+.elevator-speech{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 50vw;
+  height:fit-content;
+  /* TODO: set max height for other screen resolutions */
+  text-align: center;
+  align-items: center;
+  overflow-wrap: break-word;
+
+  display: grid;
+  /* flex-direction: column; */
+
+  background-color: rgb(35, 212, 165);
+  height:fit-content;
+  border-radius: 5px;
+  border: 2px solid #111111;
+}
+
+.blurbs{
+    width: 100px;
+    display: grid;
     margin: 20px;
     height:fit-content;
     border-radius: 5px;
     border: 2px solid #111111;   
     
     background-color:aquamarine;
-    display: flex;
-    display: inline-flex;
-
-    
-  }
-
-  .elevator-speech{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    width: 50vw;
-    text-align: center;
-    align-items: center;
-    overflow-wrap: break-word;
-    display: flex;
-    background-color: rebeccapurple;
-  }
-
-  .blurbs{
-      width: 100px;
-  }
 }
+/* } */
 
 
 

@@ -2,3 +2,4 @@ I'm Doug Tavolette, an Senior at Rochester Institute of Technology and am gradua
 I've worked at Paychex for a year, where I focused on web development and experimented with agentic development tools and strategies. 
 While at Paychex, I created a webpage that verified and validated client submissions to ensure all the necessary files were attached before submission to the Department of Labor. 
 I also worked on an agentic upgrade effort where I wrote scripts and instructions that I used AI to automate the changes for over 100 repositories.
+
